@@ -5,7 +5,7 @@ input = sys.stdin.readline
 
 T = int(input())
 
-def get_distance(item):
+def set_to_sorting(item):
     return (item[1], item[0])
 
 for _ in range(T):
@@ -14,7 +14,7 @@ for _ in range(T):
     is_booked = [False for _ in range(N + 1)]
     result = 0
     
-    ab_list = list(map(get_distance, ab_list))
+    ab_list = list(map(set_to_sorting, ab_list))
 
     heapq.heapify(ab_list)
 
