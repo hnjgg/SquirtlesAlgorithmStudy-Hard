@@ -7,8 +7,8 @@ def make_directed(parent, directed_path, bi_directed_path, visited, indegrees):
     visited[parent] = True
     for child in bi_directed_path[parent]:
         if visited[child] == False:
-            directed_path[parent].append(child)
-            indegrees[child] += 1
+            directed_path[child].append(parent)
+            indegrees[parent] += 1
             make_directed(child, directed_path, bi_directed_path,
                           visited, indegrees)
 
@@ -27,8 +27,8 @@ def solution(n, path, order):
     make_directed(0, directed_path, bi_directed_path, visited, indegrees)
 
     for item in order:
-        directed_path[item[0]].append(item[1])
-        indegrees[item[1]] += 1
+        directed_path[item[1]].append(item[0])
+        indegrees[item[0]] += 1
 
     # print(num_entry_points)
     # 여기서부터 directed_path는 수정되면 안됨
