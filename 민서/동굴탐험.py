@@ -1,3 +1,7 @@
+import sys
+sys.setrecursionlimit(100_000_000)
+
+
 def dfs(n, graph, visited, checked, key, locked, que):
     if visited[n]:
         return
