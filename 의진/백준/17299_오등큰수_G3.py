@@ -41,6 +41,3 @@ for idx, value in enumerate(seq):
 
 for item in ngf:
     print(item, end=" ")
-
-
-print("디자인 버저랑 클라벙")
