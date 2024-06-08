@@ -1,7 +1,7 @@
 import copy
 
 max_answer = 0
-fish_live = {}
+fish_live = {} 
 fish_number = [[0 for _ in range(4)] for _ in range(4)]
 fish_direction = [[0 for _ in range(4)] for _ in range(4)]
 
@@ -87,7 +87,7 @@ def process(shark_y, shark_x, curr_sum, fish_live, fish_number, fish_direction):
                     fish_number[nposy][nposx], fish_number[curr_y][curr_x] = fish_number[curr_y][curr_x], fish_number[nposy][nposx]
                     fish_direction[nposy][nposx], fish_direction[curr_y][curr_x] = fish_direction[curr_y][curr_x], fish_direction[nposy][nposx]
                     break
-                else:
+                else: # 빈공간
                 # elif fish_number[nposy][nposx] == -1:
                     fish_number[nposy][nposx] = fish_number[curr_y][curr_x]
                     fish_number[curr_y][curr_x] = 0
@@ -113,11 +113,11 @@ def process(shark_y, shark_x, curr_sum, fish_live, fish_number, fish_direction):
             process(nsharky, nsharkx, curr_sum, copy.deepcopy(fish_live), copy.deepcopy(fish_number), copy.deepcopy(fish_direction))
 
     # 4. 상어가 먹은 물고기 포함, 물고기를 원래 위치로 초기화시킨다.
-    fish_number = init_fish
-    fish_direction = init_fish_dir
-    fish_live = init_fish_live
+    # fish_number = init_fish
+    # fish_direction = init_fish_dir
+    # fish_live = init_fish_live
     
-    curr_sum -= eaten_fish_number
+    # curr_sum -= eaten_fish_number
 
 process(0, 0, 0, fish_live, fish_number, fish_direction)
 
