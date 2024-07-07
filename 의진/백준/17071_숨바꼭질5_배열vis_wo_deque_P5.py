@@ -16,7 +16,6 @@ def bfs(start_x):
     q = []
     q.append(start_x)
     visited[0][start_x] = True
-    stop = False
 
     while q:
         new_q = []
