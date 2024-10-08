@@ -7,4 +7,4 @@ def solution(sequence):
     cumsum = [0]
     for num in sequence:
         cumsum.append(cumsum[-1] + num)
-    return abs(max(cumsum) - min(cumsum))
+    return max(cumsum) - min(cumsum)
