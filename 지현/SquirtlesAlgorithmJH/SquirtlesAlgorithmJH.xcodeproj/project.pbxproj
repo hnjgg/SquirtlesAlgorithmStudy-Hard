@@ -22,6 +22,7 @@
 		B83C6AE02CB41FAE0084F207 /* SquirtlesAlgorithmJH */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SquirtlesAlgorithmJH; sourceTree = BUILT_PRODUCTS_DIR; };
 		B83C6AE32CB41FAE0084F207 /* 프로그래머스_시소짝꿍.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "프로그래머스_시소짝꿍.swift"; sourceTree = "<group>"; };
 		B83C6AEB2CB4418B0084F207 /* 프로그래머스_연속펄스부분수열의합.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "프로그래머스_연속펄스부분수열의합.swift"; sourceTree = "<group>"; };
+		B83C6AF02CB927DB0084F207 /* 프로그래머스_무인도여행.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "프로그래머스_무인도여행.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +55,7 @@
 		B83C6AE22CB41FAE0084F207 /* SquirtlesAlgorithmJH */ = {
 			isa = PBXGroup;
 			children = (
+				B83C6AEF2CB927CA0084F207 /* 10.15 */,
 				B83C6AEA2CB41FB30084F207 /* 10.8 */,
 			);
 			path = SquirtlesAlgorithmJH;
@@ -66,6 +68,14 @@
 				B83C6AEB2CB4418B0084F207 /* 프로그래머스_연속펄스부분수열의합.swift */,
 			);
 			path = 10.8;
+			sourceTree = "<group>";
+		};
+		B83C6AEF2CB927CA0084F207 /* 10.15 */ = {
+			isa = PBXGroup;
+			children = (
+				B83C6AF02CB927DB0084F207 /* 프로그래머스_무인도여행.swift */,
+			);
+			path = 10.15;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
