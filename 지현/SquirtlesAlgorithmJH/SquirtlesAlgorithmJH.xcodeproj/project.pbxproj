@@ -23,6 +23,7 @@
 		B83C6AE32CB41FAE0084F207 /* 프로그래머스_시소짝꿍.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "프로그래머스_시소짝꿍.swift"; sourceTree = "<group>"; };
 		B83C6AEB2CB4418B0084F207 /* 프로그래머스_연속펄스부분수열의합.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "프로그래머스_연속펄스부분수열의합.swift"; sourceTree = "<group>"; };
 		B83C6AF02CB927DB0084F207 /* 프로그래머스_무인도여행.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "프로그래머스_무인도여행.swift"; sourceTree = "<group>"; };
+		B83C6AF22CB972B30084F207 /* 프로그래머스_인사고과.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "프로그래머스_인사고과.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +75,7 @@
 			isa = PBXGroup;
 			children = (
 				B83C6AF02CB927DB0084F207 /* 프로그래머스_무인도여행.swift */,
+				B83C6AF22CB972B30084F207 /* 프로그래머스_인사고과.swift */,
 			);
 			path = 10.15;
 			sourceTree = "<group>";
