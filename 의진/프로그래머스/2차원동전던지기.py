@@ -1,14 +1,22 @@
 import sys
 
 def is_matched(query, target):
-    query = int(query, 2)
-    target = int(target, 2)
-    result = query ^ target
-    bit_length = max(len(bin(query)) - 2, len(bin(target)) - 2)
+    is_same = True
+    is_inverted = True
+    for q, t in zip(query, target):
+        if q != t:
+            is_same = False
+    for q, t in zip(query, target):
+        if int(q) != (1-int(t)):
+            is_inverted = False
+            
+            
+    # result = query ^ target
+    # bit_length = max(len(bin(query)) - 2, len(bin(target)) - 2)
     
-    if result == 0:
+    if is_same:
         return 1
-    elif result == (2 ** bit_length - 1):
+    elif is_inverted:
         return 2
     else:
         return 0
@@ -37,6 +45,7 @@ def flip_col_and_check_match(col_list, beginning, target):
 
 
 def solution(beginning, target):
+    cnt = 0
     answer = sys.maxsize
     list_of_col_lists = []
     for i in range(2**len(beginning[0])):
@@ -52,8 +61,10 @@ def solution(beginning, target):
         result = flip_col_and_check_match(col_list, beginning, target)
         if not result == -1:
             answer = min(answer, result)
+            cnt += 1
 
     if answer == sys.maxsize:
         answer = -1
-    
+        
+    # print(cnt)
     return answer

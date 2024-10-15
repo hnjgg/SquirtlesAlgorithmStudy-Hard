@@ -39,3 +39,6 @@ def solution(scores):
             break
 
     return answer
+
+
+x = {i:int(input()) for i in range(10)}
