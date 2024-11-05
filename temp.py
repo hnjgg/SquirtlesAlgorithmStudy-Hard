@@ -1,4 +1,13 @@
-import copy
-a = [[1 for _ in range(10)] for _ in range(5)]
+from collections import Counter
 
-print(a)
+a = [1, 3, 2, 3, 4, 3, 5]
+b = [1, 3, 2, 3]
+
+cnt_dict = Counter(a) - Counter(b)
+print(cnt_dict)
+# cnt_dict = {}
+# for item in a:
+#     if cnt_dict.get(item) is None:
+#         cnt_dict[item] = 1
+#     else:
+#         cnt_dict[item] += 1

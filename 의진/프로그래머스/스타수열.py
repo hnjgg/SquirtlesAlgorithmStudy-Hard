@@ -20,13 +20,13 @@ def get_max_length(seq):
 
     result = len(increasing_list)
 
-    increasing_list = [seq[1]]
-    for s in seq[2:]:
-        if s-1 == increasing_list[-1]:
-            continue
-        else:
-            increasing_list.append(s)
-    result = max(result, len(increasing_list))
+    # increasing_list = [seq[1]]
+    # for s in seq[2:]:
+    #     if s-1 == increasing_list[-1]:
+    #         continue
+    #     else:
+    #         increasing_list.append(s)
+    # result = max(result, len(increasing_list))
 
     return result
     

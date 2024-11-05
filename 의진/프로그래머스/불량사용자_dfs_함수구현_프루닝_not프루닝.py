@@ -1,5 +1,6 @@
 import re
 
+# Preprocess : O(U*B*len(U)), DFS : O(U^B)
 def dfs(sequence, match_info, result_list):
     if len(sequence) == len(match_info):
         result_list.append(sequence)

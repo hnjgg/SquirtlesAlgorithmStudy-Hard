@@ -1,6 +1,7 @@
 import re
 from itertools import permutations
 
+# O((uPb) * B * len(U))
 def solution(user_id, banned_id):
     answer = 0
 
