@@ -17,11 +17,11 @@ def solution(n, m, x, y, queries):
         if x1 < 0:
             x1 = 0
         if x1 > n - 1:
-            x1 = n - 1
+            return 0
         if y1 < 0:
             y1 = 0
         if y1 > m - 1:
-            y1 = m - 1
+            return 0
 
     for way, d in reversed(queries):
         if way == 0:
@@ -37,11 +37,11 @@ def solution(n, m, x, y, queries):
                 continue
             x4 -= d
         if x4 < 0:
-            x4 = 0
+            return 0
         if x4 > n - 1:
             x4 = n - 1
         if y4 < 0:
-            y4 = 0
+            return 0
         if y4 > m - 1:
             y4 = m - 1
 
