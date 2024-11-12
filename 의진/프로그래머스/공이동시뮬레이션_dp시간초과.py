@@ -57,5 +57,5 @@ def get_dp(r, c, step, queries, dp, n, m):
 def solution(n, m, x, y, queries):
     dp = [[[False for _ in range(len(queries)+1)] for _ in range(m)] for _ in range(n)]
     result = get_dp(x, y, len(queries), queries, dp, n, m)
-    pprint(dp)
+    # pprint(dp)
     return len(result)
