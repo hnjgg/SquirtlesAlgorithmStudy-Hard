@@ -3,7 +3,7 @@
 #include <iostream>
 #include <vector>
 #include <queue>
-#include <tuple>
+#include <tuple> //값이 고정이고 복사할 때 조심할 필요 없음 LIST와 비교!!!!
 #include <set>
 
 using namespace std;
